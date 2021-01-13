@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page">
+        <div data-role="header" data-theme="b">
+            <h1>Esto es el header</h1>
+        </div>
+        <div data-role="content" data-theme="f" style="background-color: rgb(169, 238, 247);">
+            <form action="">
+                <label for="fecha">Fecha:</label>
+                <input type="date" name="fecha" id="fecha">
+                <label for="nombreDonante">Nombre del donante:</label>
+                <input type="text" name="nombreDonante" id="nombreDonante">
+                <label for="apellidoDonante">Apellido del donante:</label>
+                <input type="text" name="apellidoDonante" id="apellidoDonante">
+                <label for="ubicacion">Ubicación:</label>
+                <input type="text" name="ubicacion" id="ubicacion">
+                <label for="descripcionEquipo">Descripción del equipo</label>
+                <textarea name="descripcionEquipo" id="descripcionEquipo" cols="30" rows="10"></textarea>
+                <label for="nombreReceptor">Receptor:</label>
+                <input type="text" name="nombreReceptor" id="nombreReceptor">
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+            <a href="index.html">Regresar al index</a>
+        </div>
+        <div data-role="footer" data-theme="b">
+            <h1>El pie de página</h1>
+        </div>
+    </div>
+ </body>
+
+</html>
