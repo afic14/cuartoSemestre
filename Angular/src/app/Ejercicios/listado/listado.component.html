@@ -1,0 +1,8 @@
+<ul >
+   <li *ngFor="let personas of lista; let i = index">
+       {{i}}-{{personas}}
+   </li>
+</ul>
+<h1 *ngIf="lista.length > 10; else elseBlock"> Tu lista es mayor a 10 elementos</h1>
+<ng-template #elseBlock>Tu lista es inferior a 10 elementos</ng-template>
+
