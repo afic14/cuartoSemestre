@@ -6,3 +6,10 @@
 <h1 *ngIf="lista.length > 10; else elseBlock"> Tu lista es mayor a 10 elementos</h1>
 <ng-template #elseBlock>Tu lista es inferior a 10 elementos</ng-template>
 
+<ul [ngSwitch]="numero">
+    <li *ngSwitchCase="array[0]">Este es el numero uno</li>
+    <li *ngSwitchCase="array[1]">Este es el numero dos</li>
+    <li *ngSwitchCase="array[2]">Este es el numero tres</li>
+    <li *ngSwitchCase="array[3]">Este es el numero cuatro</li>
+</ul>
+<app-pruebas></app-pruebas>

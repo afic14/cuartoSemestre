@@ -9,7 +9,8 @@ export class ListadoComponent implements OnInit {
 
   lista : any[] = ['Ana', 'Sara', 'Yolanda', 'Carmen']
   array :number [] = [1 ,2 ,3 ,4]
-  
+  numero = 2
+
   ngOnInit(): void {
   }
 
