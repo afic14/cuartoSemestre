@@ -5,6 +5,10 @@ import { AppComponent } from './app.component';
 import { ContadorComponent } from './Ejercicios/contador.component';
 import { EstudiantesComponent } from './Ejercicios/estudiantes.component';
 import { ListadoComponent } from './Ejercicios/listado/listado.component';
+import { PruebasComponent } from './Ejercicios/Pruebas/pruebas.component';
+import { CineComponent } from './Ejercicios/cine/cine.component';
+import { TeatroComponent } from './Ejercicios/teatro/teatro.component';
+import { MusicaComponent } from './Ejercicios/musica/musica.component';
 
 
 @NgModule({
@@ -12,7 +16,11 @@ import { ListadoComponent } from './Ejercicios/listado/listado.component';
     AppComponent,
     ContadorComponent,
     EstudiantesComponent,
-    ListadoComponent
+    ListadoComponent,
+    PruebasComponent,
+    CineComponent,
+    TeatroComponent,
+    MusicaComponent
   ],
   imports: [
     BrowserModule
