@@ -1,0 +1,33 @@
+<div [ngSwitch]="numero">
+    <h1 *ngSwitchCase="array[0]">Este valor es uno</h1>
+    <h1 *ngSwitchCase="array[1]">Este valor es dos</h1>
+    <h1 *ngSwitchCase="array[2]">Este valor es tres</h1>
+    <h1 *ngSwitchCase="array[3]">Este valor es cuatro</h1>
+    <h1 *ngSwitchDefault>Ningun valor coincide</h1>
+</div>
+<!--NgPlural: agrega/elimina elementos del DOM basado en valores numericos-->
+<p [ngPlural]="numeroDeProductos">
+    <ng-template ngPluralCase=0>
+       No hay productos en el carro
+    </ng-template>
+    <br>
+    <ng-template ngPluralCase=1>
+      un producto en el carro
+    </ng-template>
+    <br>
+    <ng-template ngPluralCase=2>
+      dos productos en el carro
+    </ng-template>
+    <br>
+    <ng-template ngPluralCase="pocos">
+      There are pocos productos en el carro valor % 100 = 3..10
+    </ng-template>
+    <br>
+    <ng-template ngPluralCase="algunos">
+      There are algunos productos en carro valor % 100 = 11..99
+    </ng-template>
+    <br>
+    <ng-template ngPluralCase="otros">
+      otros productos en el carro
+    </ng-template>
+ </p>

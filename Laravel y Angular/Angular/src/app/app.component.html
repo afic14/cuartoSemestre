@@ -1,0 +1,21 @@
+<span>{{numero}}</span>
+<h1>ojai mark</h1>
+
+<button (click) = "pressButton()">Puchalo</button>
+<button (click) = "sumarRandom(numero)">Random</button>
+<app-listado></app-listado>
+<app-pruebas></app-pruebas>
+
+<div class="tabs">
+    <ul>
+      <li class="is-active"><a (click)="changeComponent('Cine')">Cine</a></li>
+      <li><a (click)="changeComponent('Teatro')">Teatro</a></li>
+      <li><a (click)="changeComponent('Musica')">Música</a></li>
+    </ul>
+  </div>
+  
+  <hr>
+  
+  <ng-container *ngComponentOutlet="component"></ng-container>
+
+  

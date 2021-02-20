@@ -1,0 +1,25 @@
+<ul >
+   <li *ngFor="let personas of lista; let i = index">
+       {{i}}-{{personas}}
+   </li>
+</ul>
+<h1 *ngIf="lista.length > 10; else elseBlock"> Tu lista es mayor a 10 elementos</h1>
+<ng-template #elseBlock>Tu lista es inferior a 10 elementos</ng-template>
+
+<div *ngIf="elementoBorrado ; else noBorrado">
+    <h2>El elemnto borrado es:</h2>
+    <small>{{elementoBorrado}}</small>
+</div>
+<ng-template #noBorrado> 
+    <h2>No hay elementos borrados</h2>
+</ng-template>
+<button (click)="borrarElemento()">Borrar</button>
+
+<ul [ngSwitch]="numero">
+    <li *ngSwitchCase="array[0]">Este es el numero {{array[0]}}</li>
+    <li *ngSwitchCase="array[1]">Este es el numero {{array[1]}}</li>
+    <li *ngSwitchCase="array[2]">Este es el numero {{array[2]}}</li>
+    <li *ngSwitchCase="array[3]">Este es el numero {{array[3]}}</li>
+</ul>
+
+<button (click) = "getData()">Conectar</button>
