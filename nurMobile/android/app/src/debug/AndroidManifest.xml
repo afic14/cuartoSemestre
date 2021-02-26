@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+
+    <application tools:targetApi="28" android:usesCleartextTraffic="true">
+    <meta-data
+     android:name="com.google.android.geo.API_KEY"
+     android:value="AIzaSyArK4NfTRr-m1V4ZTFJwcLHh8GBFX4UH6U"/>
+     </application>
+</manifest>
