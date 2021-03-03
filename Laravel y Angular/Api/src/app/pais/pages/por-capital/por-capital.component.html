@@ -1,0 +1,12 @@
+<br>
+<div class="row">
+    <div class="col">
+        <app-capital-input (onEnter)="buscar($event)"></app-capital-input>
+    </div>
+</div>
+<div *ngIf="hayError" class="text text-danger">
+    No se encontro ninguna coincidencia
+</div>
+<div>
+    <app-capital-output  [paises]="paises"></app-capital-output>
+</div>
